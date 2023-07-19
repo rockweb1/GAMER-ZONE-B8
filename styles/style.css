@@ -343,6 +343,13 @@
     font-weight: 500;
     padding-right: 60px;
 }
+.footer_icon i{
+    height: 50px;
+    width: 50px;
+   padding-right: 25px;
+   flex-shrink: 0;
+   color: #fff;
+}
 .f_copyright{
     justify-content: center;
 }
@@ -352,4 +359,41 @@
     font-size: 16px;
     font-weight: 500;
     padding-top:18px;
+}
+
+
+
+
+/* ---- mobile responsive ---- */
+
+@media screen and (max-width: 576px){
+    .navbar,
+    .nav_right,
+    .banner,
+    .nav_right > ul,
+    .gamer,
+    .funny_image, 
+    .play{
+            flex-direction: column;
+    }
+    .nav_right li{
+        padding-top: 25px;
+    }
+    .banner{
+        flex-direction: row-reverse;
+        flex-direction: column;
+    }
+    .gamer_right{
+        text-align: center;
+        padding: 20px;
+    }
+    .funny_image{
+        text-align: center;
+    }
+    .play_text{
+        text-align: center;
+    }
+    .footer{
+       padding-left:200px ;
+    }
 }
